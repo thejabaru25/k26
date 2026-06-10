@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ES2020",
+    "module": "CommonJS",
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* Strict Type Checking */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+
+    /* Module Resolution */
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+
+    /* Paths & Aliases */
+    "baseUrl": "./src",
+    "paths": {
+      "@config/*": ["config/*"],
+      "@controllers/*": ["controllers/*"],
+      "@services/*": ["services/*"],
+      "@routes/*": ["routes/*"],
+      "@models/*": ["models/*"],
+      "@plugins/*": ["plugins/*"],
+      "@utils/*": ["utils/*"],
+      "@jobs/*": ["jobs/*"]
+    },
+
+    /* Output Quality */
+    "removeComments": true,
+    "sourceMap": true,
+
+    /* Performance */
+    "skipLibCheck": true,
+
+    /* Node Compatibility */
+    "types": ["node"]
+  },
+
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
