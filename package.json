@@ -1,0 +1,52 @@
+{
+  "name": "khata-saas-backend",
+  "version": "1.0.0",
+  "description": "Digital Khata + Pre-order SaaS Backend",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate deploy",
+    "prisma:push": "prisma db push",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "khata",
+    "saas",
+    "fastify",
+    "prisma",
+    "backend"
+  ],
+  "author": "Teenu",
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/cors": "^9.0.1",
+    "@fastify/env": "^4.2.0",
+    "@fastify/jwt": "^7.2.0",
+    "@fastify/sensible": "^5.3.0",
+    "@prisma/client": "^5.19.0",
+    "bcrypt": "^5.1.0",
+    "dayjs": "^1.11.10",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.28.1",
+    "firebase-admin": "^12.5.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/node": "^20.14.10",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.2",
+    "prisma": "^5.19.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
